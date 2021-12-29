@@ -5,7 +5,6 @@ class BottomBarProvider extends ChangeNotifier {
 
   changeIndex(int i) {
     index = i;
-    print(index);
     notifyListeners();
   }
 }
