@@ -4,6 +4,7 @@ import 'package:map/providers/my_bottom_provider.dart';
 import 'package:map/screens/my_home_page/my_home_page.dart';
 import 'package:map/screens/my_home_page/notifications/notification.dart';
 import 'package:map/screens/my_home_page/profile/profile_page.dart';
+import 'package:map/screens/my_home_page/reservation/beach_resort_lux.dart';
 import 'package:map/screens/my_home_page/searchPage/filter_page.dart';
 import 'package:provider/provider.dart';
 
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Nunito',
         primarySwatch: Colors.blue,
       ),
-      home:  FilterPage(),
+      home:  RoomOptionPage(),
     );
   }
 }

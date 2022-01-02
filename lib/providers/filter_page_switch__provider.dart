@@ -7,18 +7,15 @@ class FilterSwitchProvider extends ChangeNotifier {
 
   changeBreakfast(bool option) {
     breafastInclude = option;
-    print(breafastInclude);  
     
     notifyListeners();
   }
   changeDeal(bool option) {
     deals = option;  
-    print(deals);
     notifyListeners();
   }
   changeAvailable(bool option) {
     available = option;  
-    print(available);
     notifyListeners();
   }
 }
