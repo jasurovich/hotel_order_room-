@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:map/providers/credit_card_save.dart';
 import 'package:map/providers/filter_page_switch__provider.dart';
 import 'package:map/providers/my_bottom_provider.dart';
-import 'package:map/screens/reservation/reservation_2.dart';
-import 'package:map/screens/reservation/reservation_3.dart';
-import 'package:map/screens/searchPage/search_page.dart';
+import 'package:map/screens/searchPage/search_result_page.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -32,7 +30,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Nunito',
         primarySwatch: Colors.blue,
       ),
-      home: const SearchPage(),
+      home: const SearchResultPage(),
     );
   }
 }

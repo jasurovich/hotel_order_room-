@@ -15,3 +15,4 @@ const Color blackColor = Color(0xff111111);
 const Color greywhite = Color(0xffF5F5F5);
 const Color greyText = Color(0xff999999);
 const Color cardColor = Color(0xffACACAC);
+const Color greytext2 = Color(0xff616167);
