@@ -13,6 +13,8 @@ class BottomBar extends StatelessWidget {
     SizeConfig().init(context);
     return SizedBox(
       child: BottomNavigationBar(
+        showSelectedLabels: false, 
+        showUnselectedLabels: false,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Container(
@@ -26,7 +28,6 @@ class BottomBar extends StatelessWidget {
                 borderRadius: BorderRadius.circular(
                   getWidth(10.0),
                 ),
-              
               ),
               child: SvgPicture.asset(
                 "assets/icons/bottomBarIcons/home.svg",
@@ -51,7 +52,6 @@ class BottomBar extends StatelessWidget {
                 borderRadius: BorderRadius.circular(
                   getWidth(10.0),
                 ),
-              
               ),
               child: SvgPicture.asset(
                 "assets/icons/bottomBarIcons/search.svg",
@@ -76,7 +76,7 @@ class BottomBar extends StatelessWidget {
                 borderRadius: BorderRadius.circular(
                   getWidth(10.0),
                 ),
-              
+
               ),
               child: SvgPicture.asset(
                 "assets/icons/bottomBarIcons/bell.svg",
@@ -92,17 +92,16 @@ class BottomBar extends StatelessWidget {
           BottomNavigationBarItem(
               icon: Container(
                 alignment: Alignment.center,
-              width: getWidth(50.0),
-              height: getWidth(50.0),
-              decoration: BoxDecoration(
-                color: context.watch<BottomBarProvider>().index == 3
-                    ? Colors.amber.shade100
-                    : Colors.transparent,
-                borderRadius: BorderRadius.circular(
-                  getWidth(10.0),
+                width: getWidth(50.0),
+                height: getWidth(50.0),
+                decoration: BoxDecoration(
+                  color: context.watch<BottomBarProvider>().index == 3
+                      ? Colors.amber.shade100
+                      : Colors.transparent,
+                  borderRadius: BorderRadius.circular(
+                    getWidth(10.0),
+                  ),
                 ),
-              
-              ),
                 child: SvgPicture.asset(
                   "assets/icons/bottomBarIcons/User.svg",
                   color: context.watch<BottomBarProvider>().index == 3

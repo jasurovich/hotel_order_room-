@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:map/core/components/bottom_bar/buttons/main_button.dart';
+import 'package:map/core/components/buttons/main_button.dart';
 import 'package:map/core/constants/colors.dart';
 import 'package:map/responsive/size_config.dart';
 
@@ -130,6 +130,7 @@ class RoomOptionPage extends StatelessWidget {
                                 ),
                                 SizedBox(
                                     width: getWidth(185.0),
+                                    height: getHeight(60.0),
                                     child: RoundedButton(
                                         text: "Select", press: () {}))
                               ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:map/core/components/bottom_bar/bottom_bar.dart';
-import 'package:map/core/components/bottom_bar/buttons/main_button.dart';
+import 'package:map/core/components/buttons/main_button.dart';
 import 'package:map/responsive/size_config.dart';
 
 class NotificationPage extends StatelessWidget {
@@ -50,7 +50,11 @@ class NotificationPage extends StatelessWidget {
                     SizedBox(
                       height: getHeight(19.0),
                     ),
-                    RoundedButton(text: "Search a room", press: () {})
+                    SizedBox(
+                      width: getWidth(294.0),
+                      height: getHeight(60.0),
+                      child: RoundedButton(text: "Search a room", press: () {}),
+                    )
                   ],
                 ),
               ),
@@ -61,7 +65,7 @@ class NotificationPage extends StatelessWidget {
                 physics: const BouncingScrollPhysics(),
                 itemBuilder: (_, index) {
                   return Container(
-                    color: index == 2 ?  Colors.orange[50]:Colors.transparent,
+                    color: index == 2 ? Colors.orange[50] : Colors.transparent,
                     alignment: Alignment.center,
                     height: getHeight(122.5),
                     child: Padding(

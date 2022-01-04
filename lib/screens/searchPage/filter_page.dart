@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:map/core/components/bottom_bar/buttons/main_button.dart';
+import 'package:map/core/components/buttons/main_button.dart';
 import 'package:map/core/constants/colors.dart';
 import 'package:map/providers/filter_page_switch__provider.dart';
 import 'package:map/responsive/size_config.dart';
@@ -101,14 +101,18 @@ class FilterPage extends StatelessWidget {
               },
             ),
           ),
-          SizedBox(height: getHeight(124.0),),
-          RoundedButton(text: "Apply", press: (){})
+          SizedBox(
+            height: getHeight(124.0),
+          ),
+          SizedBox(
+            width: getWidth(338.0),
+            height: getHeight(70.0),
+            child: RoundedButton(text: "Apply", press: () {}),
+          )
         ],
       ),
     );
   }
-
-  
 
   ListTile _filterPageOptions(String title, String options) {
     return ListTile(

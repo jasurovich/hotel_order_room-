@@ -18,8 +18,8 @@ class RoundedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return SizedBox(
-      height: getHeight(60.0),
-      width: getWidth(294.0),
+      height: getHeight(70.0),
+      width: getWidth(350.0),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(getWidth(10.0)),
         child: newElevatedButton(),
